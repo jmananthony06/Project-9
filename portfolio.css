@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat play-fair', sans-serif;
+    background-color: ghostwhite;
+}
+
+/**** PAGE 1 ****/
+/****************/
+/**** HEADER ****/
+/****************/
+
+header {
+    height: 75px;
+    background-color: #343434;
+    display: flex;
+    align-items: center;
+}
+
+.headerNav a {
+    font-size: large;
+    font-weight: 550;
+}
+
+.headerLip {
+    width: 100%;
+    height: 7px;
+    background-color: #c1dff0;
+}
+
+/**** Header Logo ****/
+
+.logoContainer {
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.whiteLogo {
+    width: 85px;
+    height: 40px;
+    border: 3px solid #FBFCFF;
+}
+
+.whiteLogo p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #FBFCFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.blueLogo {
+    width: 85px;
+    height: 40px;
+    border: 3px solid #c1dff0;
+    margin-top: -33px;
+    margin-left: 7px;
+}
+/***************************/
+
+/**** Header Nav ****/
+
+.headerNav {
+    margin: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 25.5%;
+}
+
+.headerNav a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+/****************************/
+
+/***********************/
+/**** BODY CONTENT  ****/
+/***********************/
+
+/**** Body: Rectangle Container ****/
+
+.welcomeDiv {
+    height: 100%;
+}
+
+.rectanglesContainer {
+    height: 500px;
+    min-width: 300px;
+    width: 50%;
+    margin: 4% auto 0 auto;
+    position: relative;
+}
+
+.greyRectangle {
+    border: 7px solid #343434;
+    height: 400px;
+    width: 100%;
+}
+
+.greyRectangle h1 {
+    margin: 18% auto 0 auto;
+    text-align: center;
+    margin-top: 14%;
+    color: #343434;
+    font-size: 85px;
+}
+
+.blueRectangle {
+    border: 7px solid #c1dff0;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+}
+
+.greyRectangle p {
+    text-align: center;
+    margin: 5.5% auto 0 auto;
+    font-size: 27px;
+    /* font-weight: 300; */
+}
+
+/**** Body: Icons ****/
+
+.socialIcons {
+    width: 21%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% auto 0 auto;
+}
+
+.socialIcons i {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #343434;
+    border-radius: 50%;    
+}
+
+/**** Body: Scroll Down ****/
+
+.scrollDown {
+    margin: 6.5% auto 0 auto;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/***********************/
+/**** PAGE 2 - BODY ****/
+/***********************/
