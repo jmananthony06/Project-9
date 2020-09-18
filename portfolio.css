@@ -11,12 +11,16 @@ body {
     background-color: ghostwhite;
 }
 
+a {
+    cursor: pointer;
+}
+
 /**** PAGE 1 ****/
 /****************/
 /**** HEADER ****/
 /****************/
 
-header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
+header {
     height: 75px;
     background-color: #343434;
     display: flex;
@@ -24,6 +28,11 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
     position: sticky;
     top: 0;
     z-index: 5;
+}
+
+header a {
+    text-decoration: none;
+    margin: auto;
 }
 
 .headerNav a {
@@ -37,7 +46,6 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
     background-color: #c1dff0;
     position: absolute;
     top: 100%;
-    /* margin-top: 4%; */
 }
 
 .divLip {
@@ -106,7 +114,6 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
 .bodyContentContainer {
     width: 100%;
     height: 10%;
-    /* background-color: #34343409; */
 }
 
 .welcomeDiv {
@@ -148,7 +155,6 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
     text-align: center;
     margin: 5.5% auto 0 auto;
     font-size: 27px;
-    /* font-weight: 300; */
 }
 
 /**** Body: Icons ****/
@@ -159,6 +165,16 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
     display: flex;
     justify-content: space-between;
     margin: 3.5% auto 0 auto;
+}
+
+.socialIcons i:hover {
+    color: #343434;
+    background-color: rgb(248, 248, 254);
+    transition: .3s;
+}
+
+.socialIcons a {
+    text-decoration: none;
 }
 
 .socialIcons i {
@@ -174,13 +190,6 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
 
 /**** Body: Scroll Down ****/
 
-/* .randomCodeImg {
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
-    position: relative;
-} */
-
 .scrollDown {
     margin: 6% auto 4% auto;
     width: 15%;
@@ -193,11 +202,12 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
     text-align: center;
 }
 
-.scrollDown i {
-    /* height: 100px; can't change height or width?! why??
-    width: 100px; */
+.scrollDown .downCaret {
+    height: 55px; 
+    width: 55px; 
     margin-top: 12%;
-    margin-left: 48%;
+    margin-left: 40%;
+
 }
 
 /***********************/
@@ -207,7 +217,6 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
 .aboutMeDiv {
     height: 105vh;
     width: 100%;    
-    /* background-color: #34343409;  */
     margin-top: 3%; 
 }
 
@@ -224,23 +233,46 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
 
 .aboutTextContainer {
     width: 59%;
-    height: 13.5%;
+    padding: 10px;
     margin: auto;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     background-color: #c1dff018;
     border-radius: 5px;
-    border: 5px solid #34343413;
+}
+
+.greyRectangleTwo {
+    border: 7px solid #343434;
+    height: 200px;
+    width: 100%;
+}
+
+.blueRectangleTwo {
+    border: 7px solid #c1dff0;
+    height: 200px;
+    width: 100%;
+    margin-left: 28px;
+    margin-top: 18px;
+}
+
+.aboutTextContainer .timeline {
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.timeline h5 {
+    margin-right: 100px;
 }
 
 .timeline {
     font-size: 36px;
     text-align: center;
+    margin-top: 4px;
 }
 
 .aboutTextContainer h5 {
-    margin-top: 35px;
-    font-size: 24px;
+    margin-top: 25px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -254,10 +286,11 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
 }
 
 .imageContainer img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     filter: opacity(70%);
     border-radius: 5px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
 }
 
 .cartoonImageContainer {
@@ -275,13 +308,7 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
     border-radius: 10px;
 }
 
-.cartoonImageContainer i {
-    height: 150px;
-    width: 150px;
-    background-color: #343434;
-    color: #343434;
-    border-radius: 5px;
-}
+
 
 /**** Timeline Graph ****/
 
@@ -342,8 +369,6 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
 .technologiesUsed {
     width: 95%;
     height: 110px;
-    border: 4px solid #c1dff0;
-    /* margin-top: 5%; */ /* margin-top doesn't work here */
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -365,14 +390,77 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
 
 .card {
     width: 400px;
-    height: 400px;
+    height: 425px;
     border: 4px solid #34343413;
 }
 
-.card img {
-    height: 275px;
-    width: 342px;
-    zoom: 100%;
+.card p {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+    background-color: #c1dff0;
+}
+
+.card:hover {
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.projectFour {
+    background-image: url('./img/project-4-img.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.projectFive {
+    background-image: url('./img/Projec-5-img.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.projectSix {
+    background-image: url('./img/Project-6-img.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.projectSeven {
+    background-image: url('./img/Project-7-img.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.projectEight {
+    background-image: url('./img/Project-8-img.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fsjsOne {
+    background-image: url('./img/FSJS-1-img.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fsjsTwo {
+    background-image: url('./img/FSJS-2-img.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aPlus {
+    background-image: url('./img/A+\ Screenshot.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /************************/
@@ -380,23 +468,55 @@ header { /* WHY IS STICKY NAV FLASHING SEIZURE STYLE WHEN I SCROLL */
 /************************/
 
 footer {
-    height: 85px;
+    height: 60px;
     width: 100%;
-    background-color: #343434d2;
+    background-color: #343434;
 }
 
+/* footer .footerP {
+    color: #343434;
+    width: 5%;
+    font-size: 10px;
+    margin-top: 20px; 
+    margin-left: 20px;
+}  moves whole footer instead of just p tag   */
+
 footer .logoContainer {
-    margin-top: 8px;
+    margin: auto;
+    margin-top: 31px;
+    width: 10%;
     /* cant manipulate width of container logo in footer?? */
     /* during position manipulation process now the p is out of the logo???!!! */
 }
 
-footer p {
-    color: white;
-    width: 5%;
-    font-size: 10px; /* why does whole footer move and not just the p tag per my selection?? */
+footer .logoContainer p {
+    margin: auto;
+    margin-top: 10px;
 }
 
-footer img {
-    margin-left: 90%;
+footer.socialIcons {
+    /* margin-right: 20px; */
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 15px; */
 }
+
+footer .socialIcons i:hover {
+    color: #343434;
+    background-color: rgb(248, 248, 254);
+    transition: .3s;
+}
+
+/* .footerIcons {
+    display: flex;
+    margin-left: auto;
+    margin-top: -33px;
+    width: 15%;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+

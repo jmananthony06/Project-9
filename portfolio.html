@@ -9,49 +9,49 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
         <link rel="icon" href="./img/at-href-logo.png"> 
         <a href="https://icons8.com/icon/20909/html-5"></a>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     </head>
     <body>
 
     <!---------- PAGE ONE ---------->
         
         <header>
-            <div class="logoContainer">
+            <a href="#"><div class="logoContainer">
                 <div class="whiteLogo">
                     <p>AT</p>
                 </div>
                 <div class="blueLogo"></div>
-            </div>
+            </div></a>
 
             <nav class="headerNav">
-                <a href="">About Me</a>
-                <a href="">Portfolio</a>
-                <a href="">Resume</a> <!-- make this clickable link to different page -->
-                <a href="">Contact</a>
+                <a data-goto="goToAbout">About Me</a>
+                <a data-goto="goToPortfolio">Portfolio</a>
+                <!-- <a href="">Resume</a> make this clickable link to different page -->
+                <a data-goto="goToContact">Contact</a>
             </nav>
             <hr class="headerLip">
         </header>
 
         <div class="bodyContentContainer">
-        <div class="welcomeDiv">
-           <div class="rectanglesContainer">
-               <div class="greyRectangle">
-                   <h1>Anthony Tiseo</h1>
-                   <p>&lt; Front End Web Developer /&gt;</p>
-               </div>
+            <div class="welcomeDiv">
+                <div class="rectanglesContainer">
+                    <div class="greyRectangle">
+                        <h1>Anthony Tiseo</h1>
+                        <p>&lt; Front End Web Developer /&gt;</p>
+                    </div>
                <div class="blueRectangle"></div>
            </div>
         </div>
-        </div>
+        
         <!-- CANT GET IMG WRAPPED AROUND .socialIcon to end of .scrollDown - WHY?! -->
         <nav class="socialIcons">
-            <i class="fa fa-2x fa-github"></i>
-            <i class="fa fa-2x fa-linkedin"></i>
-            <i class="fa fa-2x fa-envelope"></i>
+            <a href="https://github.com/jmananthony06"><i class="fa fa-2x fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anthony-tiseo-04701a90/"><i class="fa fa-2x fa-linkedin"></i></a>
+            <a href="mailto: anthony.tiseo92@protonmail.com"><i class="fa fa-2x fa-envelope"></i></a>
         </nav>
-        <!-- <img class="randomCodeImg" src="./img/random-code.png" alt="">  -->
         <div class="scrollDown">
-            <p>Scroll Down</p>
-            <i class="fa fa-angle-down"></i>
+            <!-- <p>Scroll Down</p> -->
+            <img class="downCaret" src="https://img.icons8.com/ios-filled/50/000000/chevron-down.png"/>
         </div>
 
     <!---------- PART TWO ---------->
@@ -61,9 +61,13 @@
                 <h1 class="timeline">About Me</h1>
             </div>
             <hr class="divLip">
-            <div class="aboutTextContainer">
+            <div class="aboutTextContainer" id="goToAbout">
+                <div class="greyRectangleTwo">
+                <div class="blueRectangleTwo">
                 <h1 class="timeline">Timeline</h1>
                 <h5>From obsessive gamer to passionate musician turned compulsively curious developer.</h5>
+                </div>
+                </div>
             </div>
                 <div class="imageContainer">
                     <img class="imgOne" src="./img/portfolio-img-1.jpg" alt="">
@@ -72,9 +76,9 @@
                     <img class="imgFour" src="./img/portfolio-img-5.jpg" alt="">
                 </div>
                 <div class="cartoonImageContainer">
-                     <img src="./img/xbox-controller.png" alt=""> 
-                     <img src="./img/cartoon keyboard.png" alt=""> 
-                     <i class="fab fa-js"></i> <!-- can't make image appear?! -->
+                     <img src="https://img.icons8.com/metro/104/000000/xbox.png"/>
+                     <img src="https://img.icons8.com/ios-filled/100/000000/electronic-music.png"/>
+                     <img src="https://img.icons8.com/ios-filled/150/000000/js.png"/>
                 </div>
                 <div class="timelineGraphContainer">
                     <hr class="horizontalLine">
@@ -91,7 +95,7 @@
                 <h1 class="timeline">Portfolio</h1>
             </div>
             <hr class="divLip">
-            <div class="technologiesUsed"> 
+            <div class="technologiesUsed" id="goToPortfolio"> 
                 <img src="https://img.icons8.com/color/96/000000/html-5.png"/>
                 <img src="https://img.icons8.com/color/96/000000/css3.png"/>
                 <img src="https://img.icons8.com/color/96/000000/javascript.png"/>
@@ -104,70 +108,65 @@
             
             <div class="portfolioCardWrapper">
                 <!--TH Project 4-->
-                <div class="card">
-                    <p>Web Style Guide</p>
-                    <img src="" alt="">
+                <div class="card projectFour">
+                        <p>Web Style Guide</p>
                 </div>
 
                 <!--TH Project 5-->
-                <div class="card">
+                <div class="card projectFive">
                     <p>Interactive Photo Gallery</p>
-                    <img src="" alt="">
                 </div> 
                 
                 <!--TH Project 6-->
-                <div class="card">
+                <div class="card projectSix">
                     <p>Game Show App</p>
-                    <img src="" alt="">
                 </div> 
                 
                 <!--TH Project 7-->
-                <div class="card">
+                <div class="card projectSeven">
                     <p>WebApp Dashboard</p>
-                    <img src="" alt="">
                 </div> 
                 
                 <!--TH Project 8-->
-                <div class="card">
+                <div class="card projectEight">
                     <p>API Employee Directory</p>
-                    <img src="" alt="">
                 </div> 
                 
                 <!--TH FSJS Project 1-->
-                <div class="card">
+                <div class="card fsjsOne">
                     <p>Random Quote Generator</p>
-                    <img src="" alt="">
                 </div> 
                 
                 <!--TH FSJS Project 2-->
-                <div class="card">
+                <div class="card fsjsTwo">
                     <p>List Pagination & Filtering</p>
-                    <img src="" alt="">
                 </div> 
                 
                 <!--A+ Essential services - Client Site-->
-                <div class="card">
+                <div class="card aPlus">
                     <p>A+ Essential Services</p>
-                    <img src="./img/aplus-img.png" alt="">
-                </div> 
-                
+                </div>                 
             </div>
         </div>
 
     <!---------- FOOTER ---------->
 
-    <footer>
-        <p>copyright 2020</p>
-        <div class="logoContainer">
+    <footer id="goToContact">
+        <!-- <p class="footerP">copyright 2020</p> -->
+        <!-- <div class="logoContainer">
             <div class="whiteLogo">
                 <p>AT</p>
             </div>
             <div class="blueLogo"></div>
-        </div>
-        <img src="https://img.icons8.com/fluent/35/000000/github.png"/>
-        <img src="https://img.icons8.com/android/24/000000/linkedin.png"/>
-        <img src="https://img.icons8.com/ios/25/000000/new-post.png"/>
-    </footer>
+        </div> -->
 
+        <nav class="socialIcons">
+            <a href="https://github.com/jmananthony06"><i class="fa fa-2x fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anthony-tiseo-04701a90/"><i class="fa fa-2x fa-linkedin"></i></a>
+            <a href="mailto: anthony.tiseo92@protonmail.com"><i class="fa fa-2x fa-envelope"></i></a>
+        </nav>
+    </footer>
+    
+    <script src="js/scrollTo.js"></script>
     </body>
 </html>
