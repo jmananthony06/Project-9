@@ -17,12 +17,15 @@
     <!---------- PAGE ONE ---------->
         
         <header>
-            <a href="#"><div class="logoContainer">
+            <a href="#" class="atLogo">
+                <div class="logoContainer">
                 <div class="whiteLogo">
                     <p>AT</p>
                 </div>
-                <div class="blueLogo"></div>
-            </div></a>
+                <div class="blueLogo">                    
+                </div>
+            </div>
+            </a>
 
             <nav class="headerNav">
                 <a data-goto="goToAbout">About Me</a>
@@ -69,10 +72,10 @@
             <hr class="divLip">
             <div class="aboutTextContainer" id="goToAbout">
                 <div class="greyRectangleTwo">
-                <div class="blueRectangleTwo">
-                <h1 class="timeline">Timeline</h1>
-                <h5>From obsessive gamer to passionate musician turned compulsively curious developer.</h5>
-                </div>
+                    <div class="blueRectangleTwo">
+                        <h1 class="timeline">Timeline</h1>
+                        <h5>From obsessive gamer to passionate musician turned compulsively curious developer.</h5>
+                    </div>
                 </div>
             </div>
                 <div class="imageContainer">
@@ -82,9 +85,9 @@
                     <img class="imgFour" src="./img/portfolio-img-5.jpg" alt="">
                 </div>
                 <div class="cartoonImageContainer">
-                     <img src="https://img.icons8.com/metro/104/000000/xbox.png"/>
-                     <img src="https://img.icons8.com/ios-filled/100/000000/electronic-music.png"/>
-                     <img src="https://img.icons8.com/ios-filled/150/000000/js.png"/>
+                     <img class="xboxIcon" src="https://img.icons8.com/metro/104/000000/xbox.png"/>
+                     <img class="keyboardIcon" src="https://img.icons8.com/ios-filled/100/000000/electronic-music.png"/>
+                     <img class="jsIcon" src="https://img.icons8.com/ios-filled/150/000000/js.png"/>
                 </div>
                 <div class="timelineGraphContainer">
                     <hr class="horizontalLine">
@@ -141,92 +144,100 @@
             
             <div class="portfolioCardWrapper">
                 <!--TH Project 4-->
-                <div class="card projectFour">
-                    <p>Web Style Guide</p>
-                </div>
-                <div class="pCardTextOne">
-                    <p>A mock-up page made by implementing Sass partials to create an organized code structure and smoother website experience.</p>
-                    <p class="pCardTechOne">HTML - CSS - Flexbox - Sass</p>
-                    <button formaction="">Code</button>
-                    <button formaction="">Site</button>
+                <div class="galleryCard">
+                    <p class="cardTitle">Web Style Guide</p>
+                    <div class="card projectFour"></div>
+                    <div class="pCardText">
+                        <p>A mock-up page made by implementing Sass partials to create an organized code structure and smoother website experience.</p>
+                        <p class="pCardTechOne">HTML - CSS - Flexbox - Sass</p>
+                        <button formaction="">Code</button>
+                        <button formaction="">Site</button>
+                    </div>
                 </div>
 
                 <!--TH Project 5-->
-                <div class="card projectFive">
-                    <p>Interactive Photo Gallery</p>
+                <div class="galleryCard">
+                    <p class="cardTitle">Interactive Photo Gallery</p>
+                    <div class="card projectFive"></div>
+                    <div class="pCardText">
+                        <p>An interactive photo gallery with a search feature using Javascript and implementing a jQuery lightbox.</p>
+                        <p class="pCardTechTwo">HTML - CSS - Flexbox - Javascript - jQuery</p>
+                        <button formaction="">Code</button>
+                        <button formaction="">Site</button>
+                    </div>
                 </div> 
-                <div class="pCardTextTwo">
-                    <p>An interactive photo gallery with a search feature using Javascript and implementing a jQuery lightbox.</p>
-                    <p class="pCardTechTwo">HTML - CSS - Flexbox - Javascript - jQuery</p>
-                    <button formaction="">Code</button>
-                    <button formaction="">Site</button>
-                </div>
                 
                 <!--TH Project 6-->
-                <div class="card projectSix">
-                    <p>Game Show App</p>
+                <div class="galleryCard">
+                    <p class="cardTitle">Game Show App</p>
+                    <div class="card projectSix"></div>
+                    <div class="pCardText">
+                        <p>An interactive web based application word and phrase guessing game built with Javascript.</p>
+                        <p class="pCardTechThree">HTML - CSS - Javascript</p>
+                        <button formaction="">Code</button>
+                        <button formaction="">Site</button>
+                    </div> 
                 </div>
-                <div class="pCardTextThree">
-                    <p>An interactive web based application word and phrase guessing game built with Javascript.</p>
-                    <p class="pCardTechThree">HTML - CSS - Javascript</p>
-                    <button formaction="">Code</button>
-                    <button formaction="">Site</button>
-                </div> 
                 
                 <!--TH Project 7-->
-                <div class="card projectSeven">
-                    <p>WebApp Dashboard</p>
+                <div class="galleryCard">
+                    <p class="cardTitle">WebApp Dashboard</p>
+                    <div class="card projectSeven"></div>
+                    <div class="pCardText">
+                        <p>A user-friendly dashboard using SVG icons, charts and graphs from an open source Javascript library.</p>
+                        <p class="pCardTechFour">HTML - CSS - SVG - Javascript</p>
+                        <button formaction="">Code</button>
+                        <button formaction="">Site</button>
+                    </div> 
                 </div>
-                <div class="pCardTextFour">
-                    <p>A user-friendly dashboard using SVG icons, charts and graphs from an open source Javascript library.</p>
-                    <p class="pCardTechFour">HTML - CSS - SVG - Javascript</p>
-                    <button formaction="">Code</button>
-                    <button formaction="">Site</button>
-                </div> 
                 
                 <!--TH Project 8-->
-                <div class="card projectEight">
-                    <p>API Employee Directory</p>
+                <div class="galleryCard">
+                    <p class="cardTitle">API Employee Directory</p>
+                    <div class="card projectEight"></div>
+                    <div class="pCardText">
+                        <p>An employee directory that directly interacts with a fetch API to show info on a given profile.</p>
+                        <p class="pCardTechFive">HTML - CSS - Flexbox - API - Javascript</p>
+                        <button formaction="">Code</button>
+                        <button formaction="">Site</button>
+                    </div> 
                 </div>
-                <div class="pCardTextFive">
-                    <p>An employee directory that directly interacts with a fetch API to show info on a given profile.</p>
-                    <p class="pCardTechFive">HTML - CSS - Flexbox - API - Javascript</p>
-                    <button formaction="">Code</button>
-                    <button formaction="">Site</button>
-                </div> 
                 
                 <!--TH FSJS Project 1-->
-                <div class="card fsjsOne">
-                    <p>Random Quote Generator</p>
+                <div class="galleryCard">
+                    <p class="cardTitle">Random Quote Generator</p>
+                    <div class="card fsjsOne"></div>
+                    <div class="pCardText">
+                        <p>A quote generator created with Javascript that randomly iterates over stored data on it's own set timer or by click.</p>
+                        <p class="pCardTechSix">HTML - CSS - Javascript</p>
+                        <button formaction="">Code</button>
+                        <button formaction="">Site</button>
+                    </div>
                 </div> 
-                <div class="pCardTextSix">
-                    <p>A quote generator created with Javascript that randomly iterates over stored data on it's own set timer or by click.</p>
-                    <p class="pCardTechSix">HTML - CSS - Javascript</p>
-                    <button formaction="">Code</button>
-                    <button formaction="">Site</button>
-                </div>
                 
                 <!--TH FSJS Project 2-->
-                <div class="card fsjsTwo">
-                    <p>List Pagination & Filtering</p>
+                <div class="galleryCard">
+                    <p class="cardTitle">List Pagination & Filtering</p>
+                    <div class="card fsjsTwo"></div>
+                    <div class="pCardText">
+                        <p>A list created using Javascript to store 10 profiles per page with the ability to search through the given data.</p>
+                        <p class="pCardTechSeven">HTML - CSS - Javascript</p>
+                        <button formaction="">Code</button>
+                        <button formaction="">Site</button>
+                    </div> 
                 </div>
-                <div class="pCardTextSeven">
-                    <p>A list created using Javascript to store 10 profiles per page with the ability to search through the given data.</p>
-                    <p class="pCardTechSeven">HTML - CSS - Javascript</p>
-                    <button formaction="">Code</button>
-                    <button formaction="">Site</button>
-                </div> 
                 
                 <!--A+ Essential services - Client Site-->
-                <div class="card aPlus">
-                    <p>A+ Essential Services</p>
-                </div> 
-                <div class="pCardTextEight">
-                    <p>A website made for a client's small business focused on providing sanitation-based solutions as well as providing various additional products and services.</p>
-                    <p class="pCardTechEight">HTML - CSS - Javascript</p>
-                    <button formaction="">Code</button>
-                    <button formaction="">Site</button>
-                </div>                
+                <div class="galleryCard">
+                    <p class="cardTitle">A+ Essential Services</p>
+                    <div class="card aPlus"></div>
+                    <div class="pCardText">
+                        <p>A website made for a client's small business focused on providing sanitation-based solutions as well as providing various additional products and services.</p>
+                        <p class="pCardTechEight">HTML - CSS - Javascript</p>
+                        <button formaction="">Code</button>
+                        <button formaction="">Site</button>
+                    </div>   
+                </div>              
             </div>
         </div>
 
