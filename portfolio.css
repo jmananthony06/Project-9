@@ -785,19 +785,38 @@ footer .socialIcons i:hover {
 /**** MEDIA QUERIES ****/
 /***********************/
 
+@media (max-width: 768px) {
+    .headerNav {
+        width: 50%;
+    }
+    .welcomeDiv {
+        margin-left: -10%;
+    }
+
+    .greyRectangle,
+    .blueRectangle {
+        width: 500px;
+    }
+
+    .socialIcons {
+        width: 50%;
+    }
+
+    .aboutTextContainer {
+        width: 90%;
+    }
+
+    .timeline h5 {
+        width: 80%;
+    }
+}
+
 @media (max-width: 500px) {
 
     header {
         position: fixed;
         width: 100%;
-        /* display: flex;
-        justify-content: flex-start; */
     }
-
-    /* .atLogo {
-        margin: 0;
-        margin-left: 15px;
-    } */
 
     .headerNav {
         display: none;
@@ -867,7 +886,6 @@ footer .socialIcons i:hover {
 
     .aboutTextContainer {
         margin-bottom: 120px;
-        /* height: 400px; */
         width: 100%;
     }
 
@@ -885,12 +903,10 @@ footer .socialIcons i:hover {
     }
 
     .cartoonImageContainer {
-        /* display: none; */
         flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* height: 50%; */
         margin-top: 62%;
     }
 
@@ -937,7 +953,6 @@ footer .socialIcons i:hover {
     }
 
     .technologiesUsed img{
-        /* display: none; */
         height: 50px;
         width: 50px;
     } 
@@ -959,7 +974,6 @@ footer .socialIcons i:hover {
 
     .pCardTextOne {
         margin-top: -78%;
-        /* can't get box or grow in width any more than this? */
         position: relative;
     }
 
