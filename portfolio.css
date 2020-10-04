@@ -150,7 +150,7 @@ header a {
     height: 500px;
     min-width: 300px;
     width: 50%;
-    margin: 4% auto 0 auto;
+    margin: 4% auto 0 24%;
     position: relative;
 }
 
@@ -499,7 +499,7 @@ p.slideTop {
 
 .abilities {
     width: 50%;
-    height: 40%;
+    height: 44%;
     background-color: rgb(248, 248, 251);
     margin: auto;
     margin-top: 50px;
@@ -809,6 +809,72 @@ footer .socialIcons i:hover {
     .timeline h5 {
         width: 80%;
     }
+
+    .imageContainer {
+        width: 71%;
+        flex-wrap: wrap;
+    }
+
+    .imageContainer img {
+        margin: 10px;
+    }
+
+    .cartoonImageContainer {
+        margin-top: 360px;
+    }
+
+    .timelineGraphContainer {
+        width: 70%;
+        margin-top: -10%;
+    }
+
+    .horizontalLine {
+        margin-top: 160px;
+        margin-left: 74px;
+        width: 52%;
+    }
+    .verticalLineOne {
+        margin-left: -4px
+    }
+
+    .verticalLineTwo {
+        margin-left: 180px;
+    }
+
+    .verticalLineThree {
+        margin-left: 381px;
+    }
+
+    .abilities {
+        width: 100%;
+        height: 470px;
+    }
+
+    .abilities button {
+        margin: auto;
+        margin-left: 26%;
+        margin-top: 5px;
+        width: 50%;
+    }
+
+    .portfolioDiv {
+        margin-top: 850px;
+    }
+    
+    .card {
+        width: 500px;
+        margin-left: -33%;
+    }
+
+    .cardTitle {
+        width: 500px;
+        margin-left: -33%;
+    }
+
+    .pCardText {
+        width: 500px;
+        margin-left: -33%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -843,14 +909,19 @@ footer .socialIcons i:hover {
         height: 270px;
     }
 
+    .rectanglesContainer {
+        width: 65%;
+        margin-right: 30px;
+    }
+
     .greyRectangle h1 {
         font-size: 40px;
-        margin-top: 60px;
+        margin-top: 80px;
     }
 
     .greyRectangle p {
         font-size: 18px;
-        margin-top: 30px;
+        margin-top: 40px;
         width: 80%;
     }
 
@@ -907,7 +978,7 @@ footer .socialIcons i:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 62%;
+        margin-top: 74%;
     }
 
     .xboxIcon {
@@ -915,11 +986,11 @@ footer .socialIcons i:hover {
     }
     
     .keyboardIcon {
-       margin-top: 320px; 
+       margin-top: 340px; 
     }
 
     .jsIcon {
-        margin-top: 320px;
+        margin-top: 340px;
     }
 
     .timelineGraphContainer {
