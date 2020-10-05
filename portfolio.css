@@ -46,7 +46,7 @@ header a {
 
 .headerNav a {
     font-size: large;
-    font-weight: 550;
+    font-weight: 500;
     position: relative;
 }
 
@@ -182,7 +182,7 @@ header a {
  @keyframes slideTop {
      0% {
          transform:translateY(10px);
-         opacity: -1;
+         opacity: 0;
         }
      100% {
          transform:translateY(-20px);
